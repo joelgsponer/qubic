@@ -32,12 +32,12 @@ systemctl is-active --quiet qli && systemctl stop --no-block qli
 #[ ! -d "/q/" ] && mkdir $path
 cd $path 
 # remove existing solutions
-rm $path/*.e*
+#rm $path/*.e*
 # remove existing runners/flags
 [ -f "$path/qli-runner" ] && rm $path/qli-runner
 [ -f "$path/qli-processor" ] && rm $path/qli-processor
 # remove installation file
-[ -f "$package" ] && rm $package
+#[ -f "$package" ] && rm $package
 #wget -O $package https://app.qubic.li/downloads/$package
 tar -xzvf $package
 rm $package
