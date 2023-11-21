@@ -1,0 +1,12 @@
+[Unit]
+Description=CPU Load Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/cpu_load.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
